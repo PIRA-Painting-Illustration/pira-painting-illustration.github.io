@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="PIRA has posable wooden mannequins you can draw over, inside the layer stack. A 3D layer behaves like any other layer: opacity, blend modes, masks and clipping all apply, so you can fade the figure an">
+<title>3D figures · PIRA wiki</title>
+<link rel="icon" type="image/png" href="../media/logo-64.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Philosopher:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>:root{color-scheme:dark;--bg:#0d141d;--panel:#14212c;--line:#2a3b4c;--text:#f1f5f7;--muted:#a7b7c1;--a:#b4f0d7;--b:#89bdff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:radial-gradient(ellipse 70% 35% at 85% -10%,#234b5a 0%,transparent 75%),var(--bg);color:var(--text);font:16px/1.65 Montserrat,system-ui,-apple-system,Segoe UI,sans-serif;overflow-x:clip}
+a{color:var(--a)}
+.wrap{max-width:1180px;margin:auto;padding:0 26px}
+header{border-bottom:1px solid var(--line)}
+nav.top{display:flex;align-items:center;justify-content:space-between;min-height:72px;gap:20px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--text)}
+.brand img{width:36px;height:36px}
+.brand span{font:700 22px/1 Philosopher,Georgia,serif}
+.brand small{font:500 13px/1 Montserrat,system-ui,sans-serif;color:var(--muted);margin-left:4px}
+.toplinks{display:flex;gap:22px}.toplinks a{text-decoration:none;color:var(--muted);font-size:14px}.toplinks a:hover{color:var(--text)}
+.layout{display:grid;grid-template-columns:250px minmax(0,1fr);gap:46px;padding-top:40px;padding-bottom:70px}
+aside{position:sticky;top:20px;align-self:start;max-height:calc(100vh - 40px);overflow:auto;font-size:14px}
+aside p{margin:18px 0 6px;color:var(--text)}aside p:first-child{margin-top:0}
+aside ul{list-style:none;margin:0;padding:0}
+aside li a{display:block;padding:5px 10px;border-radius:7px;color:var(--muted);text-decoration:none}
+aside li a:hover{color:var(--text);background:#152634}
+aside a[aria-current]{color:var(--a);background:#163133}
+aside summary{display:none}
+article{max-width:760px;min-width:0}
+article h1{font:700 clamp(34px,5vw,48px)/1.1 Philosopher,Georgia,serif;margin:0 0 18px;letter-spacing:-.01em}
+article h2{font:700 28px/1.2 Philosopher,Georgia,serif;margin:42px 0 10px;padding-top:6px;border-top:1px solid var(--line)}
+article h1+p{font-size:18px;color:var(--muted)}
+article p,article li{color:#d6e0e5}
+article strong{color:var(--text)}
+article ul,article ol{padding-left:24px}article li{margin:5px 0}
+code{background:#1b303c;padding:2px 6px;border-radius:5px;font-size:.88em;overflow-wrap:anywhere}
+.table{overflow-x:auto;margin:18px 0;border:1px solid var(--line);border-radius:12px}
+table{border-collapse:collapse;width:100%;font-size:14px}
+th,td{text-align:left;vertical-align:top;padding:10px 14px;border-bottom:1px solid var(--line)}
+th{background:var(--panel);color:var(--text)}tr:last-child td{border-bottom:0}
+blockquote{margin:18px 0;border-left:3px solid var(--a);padding:6px 18px;background:#11262a;border-radius:0 10px 10px 0}
+.pager{display:flex;justify-content:space-between;gap:16px;margin-top:52px;padding-top:20px;border-top:1px solid var(--line);font-size:14px}
+.pager a{text-decoration:none;color:var(--muted)}.pager a:hover{color:var(--a)}.pager b{display:block;color:var(--text);font-size:16px}
+footer{padding:26px 0 50px;color:var(--muted);font-size:13px;border-top:1px solid var(--line)}
+@media(max-width:860px){
+ .layout{grid-template-columns:1fr;gap:18px;padding-top:22px}
+ aside{position:static;max-height:none;border:1px solid var(--line);border-radius:12px;padding:4px 14px;background:var(--panel)}
+ aside summary{display:block;cursor:pointer;padding:10px 0;font-weight:600}
+ aside details:not([open]) .navbody{display:none}
+ .toplinks a.hide-sm{display:none}
+}</style>
+</head>
+<body>
+<header><div class="wrap"><nav class="top"><a class="brand" href="../index.html"><img src="../media/logo-64.png" alt=""><span>PIRA</span><small>wiki</small></a><div class="toplinks"><a href="../index.html">Home</a><a class="hide-sm" href="index.html">Wiki contents</a><a href="Troubleshooting-and-FAQ.html">Help</a></div></nav></div></header>
+<div class="wrap layout">
+<aside><details open><summary>All wiki pages</summary><div class="navbody"><p><strong><a href="index.html">PIRA wiki</a></strong></p>
+<p><strong>Start here</strong></p>
+<ul><li><a href="Installing-and-Updating.html">Installing and updating</a></li><li><a href="The-Workspace.html">The workspace</a></li><li><a href="Starting-a-Canvas.html">Starting a canvas</a></li></ul>
+<p><strong>Drawing and painting</strong></p>
+<ul><li><a href="Pens-Pencils-and-Brushes.html">Pens, pencils and brushes</a></li><li><a href="Layers.html">Layers</a></li><li><a href="Line-Art-and-Colouring.html">Line art and colouring</a></li><li><a href="Rulers-and-Guides.html">Rulers and guides</a></li><li><a href="Comic-Pages.html">Comic pages</a></li></ul>
+<p><strong>3D figures</strong></p>
+<ul><li><a href="3D-Figures.html" aria-current="page">3D figures</a></li><li><a href="Match-a-Pose-to-a-Photo.html">Match a pose to a photo</a></li><li><a href="PIRA-Pose.html">PIRA Pose</a></li></ul>
+<p><strong>Recording and video</strong></p>
+<ul><li><a href="Timelapse.html">Timelapse</a></li><li><a href="Animation-and-Render-Video.html">Animation and Render Video</a></li></ul>
+<p><strong>Files</strong></p>
+<ul><li><a href="Files-Saving-and-Exporting.html">Files, saving and exporting</a></li></ul>
+<p><strong>Help</strong></p>
+<ul><li><a href="Troubleshooting-and-FAQ.html">Troubleshooting and FAQ</a></li><li><a href="Credits-and-Licences.html">Credits and licences</a></li></ul></div></details></aside>
+<main><article>
+<h1 id="3d-figures">3D figures</h1>
+<p>PIRA has posable wooden mannequins you can draw over, inside the layer stack. A 3D layer behaves like any other layer: opacity, blend modes, masks and clipping all apply, so you can fade the figure and sketch on a layer above it.</p>
+<h2 id="adding-a-figure">Adding a figure</h2>
+<ul><li><strong>Layer › New › 3D Figure…</strong>, or</li><li>open the <strong>3D</strong> panel and tap a pose: it goes onto the selected figure, or makes a new 3D layer when the current layer isn't one.</li></ul>
+<p>The 3D panel can add a male or female figure, put more than one figure on a layer, and remove them.</p>
+<h2 id="posing-with-the-object-tool">Posing with the Object tool</h2>
+<p>Pick the <strong>Object tool</strong> (with the Move tool in the toolbar), then:</p>
+<ul><li><strong>Drag a body part</strong> to swing it. Turn on <strong>Twist</strong> (or hold Alt) to turn it about its own bone.</li><li><strong>Drag the hips</strong> to slide the whole figure; with Twist, to turn it.</li><li><strong>Joints</strong> mode: drag the head, elbows, wrists, knees and ankles to where they should be, and the limbs follow.</li><li><strong>Drag empty canvas</strong> to orbit the camera; Shift pans and Ctrl moves closer or further.</li></ul>
+<p>The options bar has the drag modes, camera views, fit, place on floor, mirror and flip, and menus for the figure, its look and the light. <strong>Layer › Rasterize › 3D Layer</strong> turns it into plain pixels.</p>
+<h2 id="the-pose-library">The pose library</h2>
+<p>The 3D panel lists poses by category, with a search:</p>
+<ul><li>11 built-in poses, and</li><li>1,072 motion-capture poses from the CMU Graphics Lab Motion Capture Database.</li><li><strong>Hand poses</strong> for the left, right or both hands.</li></ul>
+<p>Tap a pose to apply it, then fine-tune any joint with the Object tool.</p>
+<h2 id="look">Look</h2>
+<p>The look menu sets shaded, toon, flat or silhouette rendering, an outline's width and colour, and the floor shadow.</p>
+<h2 id="lighting">Lighting</h2>
+<p>Lighting is in the <strong>3D Light</strong> panel:</p>
+<ul><li><strong>Drag the sun:</strong> in Light mode, drag on the disc around the figure. The centre lights from the camera, the rim from the side, and out to the outer ring from behind, for rim light.</li><li><strong>Presets:</strong> upper left or right, front, sides, overhead, below, rim.</li><li><strong>Sliders</strong> for direction, height, strength and ambient light, and a light colour.</li><li><strong>Turns with the camera</strong> (the default) or stays fixed in the scene as you orbit.</li><li><strong>Second light:</strong> an optional fill or rim light with its own direction, strength and colour. With the floor shadow on, it casts its own lighter shadow. Its smaller sun, marked 2, can be dragged too.</li></ul>
+<h2 id="gravity">Gravity</h2>
+<p>The 3D panel's <strong>Gravity</strong> tab drops the figure so it falls and hangs with real weight and joint limits:</p>
+<ol><li>Pick the Object tool's <strong>Pin</strong> mode and tap the parts to hold still: pin a hand to hang the figure from it, or the feet to keep them planted. <strong>Remove All Pins</strong> clears them.</li><li>Set a <strong>Push</strong> (which way and how hard) and <strong>Muscle tone</strong> (how limp or stiff).</li><li>Tap <strong>Drop</strong>. Play or scrub through the fall over the canvas.</li><li><strong>Keep</strong> the moment you want (one undo step), or <strong>Cancel</strong>. <strong>Drop again</strong> tries another fall.</li></ol>
+<h2 id="match-a-pose-to-a-photo">Match a pose to a photo</h2>
+<p>Put a photo under the 3D layer and PIRA poses the figure like the person in it. See <a href="Match-a-Pose-to-a-Photo.html">Match a pose to a photo</a>.</p>
+<h2 id="saving">Saving</h2>
+<p><code>.pcraft</code> saves the whole scene, so you can come back and re-pose it. PSD saves the figure as pixels.</p>
+<h2 id="credits">Credits</h2>
+<p>Motion-capture poses come from the CMU Graphics Lab Motion Capture Database, <a href="http://mocap.cs.cmu.edu" rel="noopener">mocap.cs.cmu.edu</a>, created with funding from NSF EIA-0196217. They are not to be sold as a separate pack.</p>
+<nav class="pager"><a href="Comic-Pages.html">Previous<b>Comic pages</b></a><a href="Match-a-Pose-to-a-Photo.html" style="text-align:right">Next<b>Match a pose to a photo</b></a></nav>
+</article></main>
+</div>
+<footer class="wrap">PIRA is in early testing. Built from the wiki in the PIRA repository.</footer>
+<script>
+// On a phone the page list starts folded so the article comes first; wider, it is always open.
+(function () {
+  var narrow = matchMedia('(max-width:860px)'), list = document.querySelector('aside details');
+  var fit = function () { list.open = !narrow.matches; };
+  fit();
+  narrow.addEventListener('change', fit);
+})();
+</script>
+</body>
+</html>
