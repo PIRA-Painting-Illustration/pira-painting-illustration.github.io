@@ -38,6 +38,8 @@ code{background:#1b303c;padding:2px 6px;border-radius:5px;font-size:.88em;overfl
 table{border-collapse:collapse;width:100%;font-size:14px}
 th,td{text-align:left;vertical-align:top;padding:10px 14px;border-bottom:1px solid var(--line)}
 th{background:var(--panel);color:var(--text)}tr:last-child td{border-bottom:0}
+figure{margin:18px 0 8px}figure img{display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:12px}
+figure+p em{color:var(--muted);font-size:14px}
 blockquote{margin:18px 0;border-left:3px solid var(--a);padding:6px 18px;background:#11262a;border-radius:0 10px 10px 0}
 .pager{display:flex;justify-content:space-between;gap:16px;margin-top:52px;padding-top:20px;border-top:1px solid var(--line);font-size:14px}
 .pager a{text-decoration:none;color:var(--muted)}.pager a:hover{color:var(--a)}.pager b{display:block;color:var(--text);font-size:16px}
@@ -73,7 +75,17 @@ footer{padding:26px 0 50px;color:var(--muted);font-size:13px;border-top:1px soli
 <div class="table"><table><thead><tr><th>Kind</th><th>Strokes follow</th></tr></thead><tbody><tr><td><strong>Straight</strong></td><td>One straight line</td></tr><tr><td><strong>Curve</strong></td><td>A curve you draw</td></tr><tr><td><strong>Concentric</strong></td><td>Circles or ellipses around a centre</td></tr><tr><td><strong>Parallel</strong></td><td>Lines parallel to the ruler</td></tr><tr><td><strong>Radial</strong></td><td>Lines out from a centre (focus lines, sunbursts)</td></tr><tr><td><strong>Fisheye</strong></td><td>Arcs through two vanishing points, for fisheye perspective</td></tr></tbody></table></div>
 <ul><li>A stroke snaps to whichever guide it's heading along, so you can draw freely near it.</li><li>Rulers belong to a layer (or to every layer) and are saved in the <code>.pcraft</code> file.</li><li><strong>View › Special Rulers</strong> turns snapping on or off, shows or hides the rulers, and clears them.</li></ul>
 <h2 id="perspective-ruler">Perspective ruler</h2>
-<p>The perspective ruler sets up one-, two- or three-point perspective, and strokes can snap to its lines. Its options (snap, show) are under <strong>View</strong> and in the command palette.</p>
+<p>The perspective ruler sets up one-, two- or three-point perspective. Pen, pencil and eraser strokes snap toward a vanishing point or run upright, so freehand lines come out straight and aimed at the right point.</p>
+<ul><li>Pick the <strong>Ruler tool</strong> and choose <strong>Perspective</strong> in the options bar: <strong>1-Point</strong>, <strong>2-Point</strong> or <strong>3-Point</strong>. <strong>Show</strong> and <strong>Snap</strong> sit beside it.</li><li>With the Ruler tool, drag the vanishing points on the canvas; the eye level follows. Painting tools never grab them, so a stroke can start on one.</li><li>A stroke picks the closest direction from its first few points, then stays on that line.</li><li>While a ruler exists, the painting tools' options bar has a snap switch next to symmetry, for flipping between snapping and drawing freely. Shift still draws straight lines in 45° steps.</li><li>The ruler is saved in the <code>.pcraft</code> file, and placing or moving it can be undone.</li></ul>
+<p><strong>1-point:</strong> one vanishing point on the eye level. Strokes go toward it, level or upright.</p>
+<figure><a href="images/perspective-1-point.webp"><img src="images/perspective-1-point.webp" alt="A 1-point perspective ruler over a street engraving" loading="lazy"></a></figure>
+<p><em>Lucas and Johannes van Doetecum after Hans Vredeman de Vries, Perspective View of a Street, 1560 (National Gallery of Art, CC0).</em></p>
+<p><strong>2-point:</strong> two points on the eye level. Strokes go toward either, or upright.</p>
+<figure><a href="images/perspective-2-point.webp"><img src="images/perspective-2-point.webp" alt="A 2-point perspective ruler over a painted street corner" loading="lazy"></a></figure>
+<p><em>Gustave Caillebotte, Paris Street; Rainy Day, 1877 (public domain).</em></p>
+<p><strong>3-point:</strong> adds a third point that upright lines converge on, for looking up or down at tall things.</p>
+<figure><a href="images/perspective-3-point.webp"><img src="images/perspective-3-point.webp" alt="A 3-point perspective ruler over skyscrapers seen from below" loading="lazy"></a></figure>
+<p><em>Skyscrapers from below, photo by Davide Ragusa (CC0, via Wikimedia Commons).</em></p>
 <h2 id="symmetry">Symmetry</h2>
 <p>Paint with symmetry across a straight line or along a path; the brush tools' options bar turns it on and sets the axis.</p>
 <h2 id="guides-and-grids">Guides and grids</h2>
